@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "1_DAL_DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/1_DAL_DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/1_DAL_DataAccessLayer.dll": {}
+        }
+      },
+      "2_BUS_BusinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "1_DAL_DataAccessLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/2_BUS_BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/2_BUS_BusinessLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "1_DAL_DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../1_DAL_DataAccessLayer/1_DAL_DataAccessLayer.csproj",
+      "msbuildProject": "../1_DAL_DataAccessLayer/1_DAL_DataAccessLayer.csproj"
+    },
+    "2_BUS_BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../2_BUS_BusinessLayer/2_BUS_BusinessLayer.csproj",
+      "msbuildProject": "../2_BUS_BusinessLayer/2_BUS_BusinessLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "2_BUS_BusinessLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Code_C#\\Dự Án 1\\DA1_862_QLPM_Karaoke\\3_GUI_PresentationLayer\\3_GUI_PresentationLayer.csproj",
+      "projectName": "3_GUI_PresentationLayer",
+      "projectPath": "E:\\Code_C#\\Dự Án 1\\DA1_862_QLPM_Karaoke\\3_GUI_PresentationLayer\\3_GUI_PresentationLayer.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Code_C#\\Dự Án 1\\DA1_862_QLPM_Karaoke\\3_GUI_PresentationLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "E:\\Code_C#\\Dự Án 1\\DA1_862_QLPM_Karaoke\\2_BUS_BusinessLayer\\2_BUS_BusinessLayer.csproj": {
+              "projectPath": "E:\\Code_C#\\Dự Án 1\\DA1_862_QLPM_Karaoke\\2_BUS_BusinessLayer\\2_BUS_BusinessLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
